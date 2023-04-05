@@ -131,7 +131,8 @@ nav a {
 }
 
 .aboutus-container {
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
+    color: white;
 }
 
 .about-us {
@@ -178,8 +179,10 @@ nav a {
     margin: 20px 10px;
     text-align: center;
     display: flex;
+    flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    position: relative;
     
 }
 
@@ -188,13 +191,18 @@ nav a {
 
 }
 
+.data-card i {
+    position: absolute;
+    top: 30px;
+}
+
 
 
 
 
 
 footer {
-    background-color: var(--dark-blue);
+    background-color: rgba(0,0,0, .8);
     color: white;
    
 }
@@ -263,7 +271,6 @@ footer input, button {
 
 .footer-cards img {
 
-    color: white;
     width: 20px;
     
 }
