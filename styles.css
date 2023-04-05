@@ -260,6 +260,14 @@ footer input, button {
     background-color: #576CBC;
 }
 
+
+.footer-cards img {
+
+    color: white;
+    width: 20px;
+    
+}
+
 /* this is where you put your media query */
 
 @media screen and (max-width: 800px) {
@@ -277,4 +285,3 @@ footer input, button {
         align-items: start;
     }
   }
-
