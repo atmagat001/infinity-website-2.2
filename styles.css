@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+:root {
+  --main-color: #19376D;
+  --light-blue: #A5D7E8;
+  --dark-blue: #0B2447;
+  --blue: #576CBC;
+  --serif: 'Noto Serif', serif;
+
+}
+
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+    
+
+
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+   
+}
+
+.section-title h3 {
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+
+}
+
+footer h3 {
+    font-size: 18px;
+    border-bottom: solid 1px white;
+}
+
+p {
+    padding: 20px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    
+}
+
+
+a::after {
+    content: '';
+    border-bottom: #bebebe;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: .5s;
+}
+
+a:hover::after {
+    width: 100%;
+    
+}
+
+
+header {
+    height: 50px;
+    width: 100vw;
+    background-color: var(--dark-blue);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+.header-container {
+    height: 50px;
+    max-width: 1140px;
+    padding: 0 5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    
+
+}
+
+.hero-container {
+    background: url("./assets/bluedottedmap.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   
+
+}
+
+.hero-container {
+    height: 400px;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.aboutus-container {
+    background-color: var(--light-blue);
+}
+
+.about-us {
+    height: 400px;
+    max-width: 1140px;
+    padding: 20px 5px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    
+}
+
+
+.datasets-container {
+    min-height: 400px;
+    display: flex;
+    flex-flow: column; 
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 5px;
+    background: #e0e0e0;
+    
+}
+
+.datasets {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1140px;
+}
+
+
+.data-card {
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  6px 6px 25px #bebebe,
+                 -6px -6px 25px #ffffff;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+   
+}
+
+
+
+
+.footer-container {
+    min-height: 400px;
+    max-width: 1140px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 10px 5px;
+}
+
+
+
+
+footer input, button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.footer-cards-container {
+    margin: 40px 0;
+    display: flex;
+    flex-flow: row;
+}
+
+.footer-cards {
+    height: 200px;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+   
+
+}
+
+.footer-cards h3 {
+    text-align: center;
+}
+
+.footer-cards a {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.links {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+}
+
+
+/* this is where you put your media query */
+
+@media screen and (max-width: 800px) {
+    .datasets {
+        flex-flow: column;
+    }
+
+    .footer-cards-container {
+        display: flex;
+        flex-flow: column;
+        
+    }
+
+    .footer-cards {
+        align-items: start;
+    }
+  }
+
