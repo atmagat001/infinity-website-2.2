@@ -24,6 +24,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: 'DM Sans', sans-serif;
+    color: var(--main-color);
     
 
 
@@ -131,8 +132,8 @@ nav a {
 }
 
 .aboutus-container {
-    background-color: var(--dark-blue);
-    color: white;
+    background-color: rgba(0,0,0, .01);
+    color: rgba(0,0,0, .85);
 }
 
 .about-us {
