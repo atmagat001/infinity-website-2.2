@@ -46,6 +46,7 @@ h3 {
 footer h3 {
     font-size: 18px;
     border-bottom: solid 1px white;
+    margin: 5px;
 }
 
 p {
@@ -57,7 +58,7 @@ p {
 }
 
 
-a::after {
+nav a::after {
     content: '';
     border-bottom: #bebebe;
     width: 0%;
@@ -69,7 +70,7 @@ a::after {
     transition: .5s;
 }
 
-a:hover::after {
+nav a:hover::after {
     width: 100%;
     
 }
@@ -112,7 +113,7 @@ nav li {
     position: relative;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -141,6 +142,7 @@ a {
     display: flex;
     flex-flow: column;
     align-items: start;
+    justify-content: center;
     
 }
 
@@ -173,13 +175,19 @@ a {
     background: #e0e0e0;
     box-shadow:  6px 6px 25px #bebebe,
                  -6px -6px 25px #ffffff;
-    margin: 10px;
+    margin: 20px 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.data-card h3 {
+    font-size: 18px;
 
 }
+
 
 
 
@@ -235,6 +243,8 @@ footer input, button {
 }
 
 .footer-cards a {
+    color: white;
+    text-decoration: none;
     padding: 5px;
     font-size: 12px;
 }
@@ -243,8 +253,12 @@ footer input, button {
     display: flex;
     flex-flow: column;
     align-items: start;
+    
 }
 
+.footer-cards a:hover {
+    background-color: #576CBC;
+}
 
 /* this is where you put your media query */
 
