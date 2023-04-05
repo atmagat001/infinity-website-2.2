@@ -275,6 +275,10 @@ footer input, button {
     
 }
 
+#open-menu, #close-menu {
+    display: none;
+}
+
 /* this is where you put your media query */
 
 @media screen and (max-width: 800px) {
@@ -291,4 +295,44 @@ footer input, button {
     .footer-cards {
         align-items: start;
     }
+
+    #open-menu {
+        display: block;
+        position: relative;
+        right: 30px;
+    }
+
+    #close-menu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+
+   #main-menu {
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: var(--dark-blue);
+    height: 50vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: top .7s ease 0s;
+
+   }
+
+   .main-menu ul {
+      display: flex;
+    flex-flow: column;
+    align-items: center;
+
+   }
+
+   .main-menu li {
+    margin: 20px;
+   }
+
   }
