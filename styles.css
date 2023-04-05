@@ -9,7 +9,11 @@
 html {
     scroll-behavior: smooth;
   }
-
+  
+  a {
+    text-decoration: none;
+    color: var(--main-color);
+  }
 :root {
   --main-color: #19376D;
   --light-blue: #A5D7E8;
