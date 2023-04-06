@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    
     font-family: 'DM Sans', sans-serif;
 
 }
@@ -29,6 +28,7 @@ h1 {
     letter-spacing: 5px;
     font-family: 'DM Sans', sans-serif;
     color: var(--main-color);
+    font-size: 50px;
     
 
 
@@ -36,7 +36,6 @@ h1 {
 
 .animate__fadeInDown {
     
-  
     animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; /* don't forget to set a duration! */
   }
@@ -46,6 +45,10 @@ h3 {
     letter-spacing: 2px;
     font-size: 1.5rem;
    
+}
+
+h4 {
+    padding: 20px;
 }
 
 .section-title h3 {
@@ -111,12 +114,15 @@ header {
 
 }
 
-.hero-container {
-    background: url("./assets/bluedottedmap.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 
+
+.wrapper {
+    display: flex;
+    
 }
+
+
+
 
 nav li {
     display: inline-block;
@@ -137,9 +143,32 @@ nav a {
     height: 400px;
     max-width: 1140px;
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
     margin: auto;
     padding: 0 5px;
+    background: url("./assets/bluedottedmap.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+
+
+}
+
+.hero-container input, a  {
+    padding: 10px;
+    min-width: 200px;
+    
+    
+    
+}
+
+.hero-container a {
+    background-color: #19376D;
+    color: white;
+    text-align: center;
+    
 }
 
 .aboutus-container {
@@ -345,6 +374,10 @@ footer input, button {
 
    .main-menu li {
     margin: 20px;
+   }
+
+   .wrapper {
+    flex-flow: column;
    }
 
   }
