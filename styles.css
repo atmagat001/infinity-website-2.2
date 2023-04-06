@@ -28,7 +28,7 @@ h1 {
     letter-spacing: 5px;
     font-family: 'DM Sans', sans-serif;
     color: var(--main-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     
 
 
@@ -141,7 +141,6 @@ nav a {
     color: var(--main-color);
     font-weight: bold;
    
-
 }
 
 .hero-container {
@@ -154,18 +153,15 @@ nav a {
     justify-content: center;
     margin: auto;
     padding: 0 5px;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
       
-
-
 }
 
 
 .hero-container input, a  {
     padding: 10px;
     min-width: 200px;
-    
-    
+   
     
 }
 
@@ -361,6 +357,7 @@ footer input, button {
         position: absolute;
         right: 30px;
         top: 20px;
+        color: white;
     }
 
    #main-menu {
