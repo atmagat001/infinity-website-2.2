@@ -34,6 +34,13 @@ h1 {
 
 }
 
+.animate__fadeInDown {
+    
+  
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
 h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
